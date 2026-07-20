@@ -2,6 +2,9 @@
 
 This repository contains a comprehensive data analysis, machine learning models, and an interactive dashboard for evaluating the operational efficiency and profitability of a petrol bunk (fuel station) using Python.
 
+## Live Dashboard
+[View the deployed Streamlit dashboard here](https://manoj-6303-petrol-bunk-analysis-and-profita-srcdashboard-lcfajr.streamlit.app/)
+
 ## Project Structure
 - `data/`: Contains the datasets and generated plots.
 - `src/Data Analysis.py`: The main Python script that performs the exploratory data analysis and generates visualizations.
@@ -41,7 +44,7 @@ python "src/Customer_Segmentation.py"
 
 5. **Launch the Interactive Dashboard:**
 ```bash
-streamlit run "src/dashboard.py"
+python -m streamlit run "src/dashboard.py"
 ```
 
 ## Key Insights and Features
