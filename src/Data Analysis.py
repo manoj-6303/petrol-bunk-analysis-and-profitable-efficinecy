@@ -4,8 +4,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
+import os
 
-df = pd.read_excel('C:\\Users\\MANOJ\\Downloads\\Project\\fuel_station_data_500_rows.xlsx')
+# Dynamically construct the path to the excel file
+current_dir = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(current_dir, '..', 'data', 'C:\\Users\\MANOJ\\Downloads\\Project\\Petrol Bunk Analysis For Operational Efficiency And Profitability\\data\\fuel_station_data_500_rows.xlsx')
+
+df = pd.read_excel(data_path)
 
 print("This is DataSet :\n ",pd.DataFrame(df))
 
